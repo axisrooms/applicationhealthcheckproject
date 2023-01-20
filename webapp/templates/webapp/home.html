@@ -1,0 +1,52 @@
+{% extends "webapp/base.html" %}
+{% block content %}
+{#    {% for post in posts %}#}
+{#        <article class="media content-section">#}
+{#          <div class="media-body">#}
+{#            <div class="article-metadata">#}
+{#              <a class="mr-2" href="#">{{ post.author }}</a>#}
+{#              <small class="text-muted">{{ post.date_posted }}</small>#}
+{#            </div>#}
+{#            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>#}
+{#            <p class="article-content">{{ post.content }}</p>#}
+{#          </div>#}
+{#        </article>#}
+{#        #}
+{#    {% endfor %}#}
+    <table id="hotelDetail" class="table-sm media-body table table-hover table table-bordered row-border cell-border hover order-column" cellspacing="0" width="100%">
+                        <thead>
+                            <tr class="table-success">
+                                <th>CM ID</th>
+                                <th>Hotel Name</th>
+                                <th>Supplier Name</th>
+                                <th>Last Activity</th>
+                                <th>PMS Connected</th>
+                                <th>No. Of Rooms</th>
+                                <th>OTA's</th>
+                                <th>PIC UPs</th>
+                                <th>Rate Updated</th>
+                                <th>Inventory Enddate</th>
+                                <th>Pricing Enddate</th>
+                                <th>AM</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="odd">
+                                <td>{[{hotel._id.$oid}]}</td>
+                                <td>{[{hotel.name}]}</td>
+                                <td>{[{hotel.ge}]}</td>
+                                <td>{[{hotel.cm}]}</td>
+                                <td>{[{hotel.hotel}]}</td>
+                                <td>{[{hotel.city}]}</td>
+                                <td>{[{hotel.state}]}</td>
+                                <td>India</td>
+                                <td>{[{hotel.cm}]}</td>
+                                <td>{[{hotel.hotel}]}</td>
+                                <td>{[{hotel.city}]}</td>
+                                <td>{[{hotel.state}]}</td>
+                                <td>India</td>
+                            </tr>
+                        </tbody>
+                    </table>
+{% endblock content %}
